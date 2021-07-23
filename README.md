@@ -13,6 +13,9 @@ npm run serve
 ### Compiles and minifies for production
 ```
 npm run build
+npm install -g serve
+serve -s dist
+
 ```
 
 ### Lints and fixes files

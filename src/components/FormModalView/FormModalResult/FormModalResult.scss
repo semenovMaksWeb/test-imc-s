@@ -1,0 +1,9 @@
+:root{
+  --form-modal__result_border: 1px solid #2c3e50;
+  --form-modal__result_padding: 30px;
+}
+.form-modal__result {
+  padding: var(--form-modal__result_padding);
+  border:  var(--form-modal__result_border);
+  width: 100%;
+}

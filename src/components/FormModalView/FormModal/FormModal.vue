@@ -1,0 +1,27 @@
+<template>
+  <Modal :close="close" v-if="getModal">
+    <template #body>
+      <FormModalGeneration
+        v-for="elem in jsonForm"
+        :elem="elem"
+        :key="elem.code"
+      />
+    </template>
+  </Modal>
+</template>
+
+<script lang="ts">
+import { defineComponent } from "vue";
+import Modal from "../../Base/Modal/Modal.vue";
+import { FormModal } from "@/components/FormModalView/FormModal/FormModal";
+import FormModalGeneration from "@/components/FormModalView/FormModalGeneration/FormModalGeneration.vue";
+export default defineComponent({
+  name: "FormModal",
+  components: { FormModalGeneration, Modal },
+  setup() {
+    return { ...FormModal() };
+  },
+});
+</script>
+
+<style lang="scss"></style>

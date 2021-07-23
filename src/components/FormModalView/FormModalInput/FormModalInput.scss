@@ -1,0 +1,8 @@
+:root{
+  --form-modal__container_margin: 0 0 10px 0;
+}
+.form-modal__input{
+  display: block;
+  width: 100%;
+  margin: var(--form-modal__container_margin) ;
+}

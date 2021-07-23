@@ -1,0 +1,6 @@
+:root{
+  --form-modal__button_margin: 30px 0;
+}
+.form-modal__button{
+  margin: var(--form-modal__button_margin);
+}

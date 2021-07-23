@@ -1,0 +1,10 @@
+:root {
+  --form-modal__container_padding: 30px;
+  --form-modal__container_margin: 0 0 10px 0;
+  --form-modal__container_border: 1px solid #747474;
+}
+.form-modal__container {
+  border: var(--form-modal__container_border);
+  padding: var(--form-modal__container_padding);
+  margin: var(--form-modal__container_margin);
+}

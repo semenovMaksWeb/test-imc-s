@@ -68,3 +68,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
   }
 ]
 ```
+
+![image](https://user-images.githubusercontent.com/80784471/126782239-dd91837d-8f39-4f26-ae09-d4b7a206adee.png)
+![image](https://user-images.githubusercontent.com/80784471/126782318-cce32525-0b80-4eb9-92ae-55bec18851d5.png)
+![image](https://user-images.githubusercontent.com/80784471/126782452-ebf82811-566a-4545-afe4-36cff94cc719.png)
+
+

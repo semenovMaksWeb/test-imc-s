@@ -1,10 +1,12 @@
 <template>
   <teleport to="body">
     <div class="modal_wrapper">
-      <div class="modal">
+      <div class="modal" :class="classModal" v-bind="$attrs">
         <div class="modal__header">
           <slot name="header" />
-          <button class="modal__button_close" @click="close">&#10006;</button>
+          <slot name="button_close">
+            <button class="modal__button_close" @click="close">&#10006;</button>
+          </slot>
         </div>
         <div class="modal__body"><slot name="body" /></div>
         <div class="modal__footer"><slot name="footer" /></div>
@@ -21,6 +23,9 @@ export default defineComponent({
   props: {
     close: {
       type: Function,
+    },
+    classModal: {
+      type: String,
     },
   },
 });

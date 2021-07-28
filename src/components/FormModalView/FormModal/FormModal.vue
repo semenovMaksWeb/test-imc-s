@@ -1,5 +1,11 @@
 <template>
-  <Modal :close="close" v-if="getModal">
+  <Modal
+    @mousemove="mousedown"
+    :classModal="'form-modal'"
+    :close="close"
+    v-if="getModal"
+    :style="{ '--form_modal_top': x + 'px', '--form_modal_left': y + 'px' }"
+  >
     <template #body>
       <FormModalGeneration
         v-for="elem in jsonForm"
@@ -24,4 +30,6 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+@import "FormModal";
+</style>

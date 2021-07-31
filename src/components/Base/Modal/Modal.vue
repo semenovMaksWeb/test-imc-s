@@ -1,7 +1,13 @@
 <template>
   <teleport to="body">
     <div class="modal_wrapper">
-      <div class="modal" :class="classModal" v-bind="$attrs">
+      <div
+        class="modal"
+        :class="classModal"
+        :style="styleModal"
+        @mousedown="mousedownModal"
+        @mouseup="mouseupModal"
+      >
         <div class="modal__header">
           <slot name="header" />
           <slot name="button_close">
@@ -26,6 +32,15 @@ export default defineComponent({
     },
     classModal: {
       type: String,
+    },
+    mousedownModal: {
+      type: Function,
+    },
+    mouseupModal: {
+      type: Function,
+    },
+    styleModal: {
+      type: Object,
     },
   },
 });

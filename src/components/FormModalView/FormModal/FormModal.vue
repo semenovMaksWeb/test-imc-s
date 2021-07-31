@@ -1,10 +1,14 @@
 <template>
   <Modal
-    @mousemove="mousedown"
     :classModal="'form-modal'"
     :close="close"
     v-if="getModal"
-    :style="{ '--form_modal_top': x + 'px', '--form_modal_left': y + 'px' }"
+    :styleModal="{
+      '--form_modal_top': x + 'px',
+      '--form_modal_left': y + 'px',
+    }"
+    :mousedownModal="mousedown"
+    :mouseupModal="mouseup"
   >
     <template #body>
       <FormModalGeneration

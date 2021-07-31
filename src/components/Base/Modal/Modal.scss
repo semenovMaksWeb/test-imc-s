@@ -9,9 +9,12 @@
 
   --modal__wrapper_top: 0;
   --modal__wrapper_left: 0;
+
+  --modal_bg: #fff;
 }
 .modal {
-  background: #fff;
+  z-index: 2000;
+  background: var(--modal_bg);
   opacity: 1;
   border: var(--modal_border);
   padding: var(--modal_padding);

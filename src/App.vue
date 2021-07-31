@@ -1,5 +1,6 @@
 <template>
   <router-view />
+  <VueTabulator />
 </template>
 
 <style lang="scss">

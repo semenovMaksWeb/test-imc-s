@@ -11,8 +11,8 @@ export function DragElem(flag: Ref<boolean>): returnFunction {
   const y = ref<position>(null);
   document.addEventListener("mousemove", (e: MouseEvent) => {
     if (flag.value) {
-      x.value = e.clientY - 50;
-      y.value = e.clientX - 50;
+      x.value = e.clientY;
+      y.value = e.clientX;
     }
   });
   return {

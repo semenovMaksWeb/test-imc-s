@@ -1,0 +1,14 @@
+.table__td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid red;
+  padding: 20px;
+  &:focus,
+  &.table__td-focus {
+    background: red;
+    color: #fff;
+  }
+}

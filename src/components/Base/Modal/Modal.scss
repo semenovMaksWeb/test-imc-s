@@ -13,6 +13,8 @@
   --modal_bg: #fff;
 }
 .modal {
+  resize: both;
+  overflow:auto;
   z-index: 2000;
   background: var(--modal_bg);
   opacity: 1;
